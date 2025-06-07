@@ -27,6 +27,10 @@ This project develops a DIY Home-Repair Helper, a smart assistant that assists u
 
 ---
 
+<img width="137" alt="Screenshot 2025-06-07 at 2 37 45 AM" src="https://github.com/user-attachments/assets/fd40b218-2aa2-4a94-9911-ea3c6aefd7d1" />
+<img width="214" alt="Screenshot 2025-06-07 at 2 37 27 AM" src="https://github.com/user-attachments/assets/34420111-9f8d-4f0b-bd15-8660bfe6c15f" />
+
+
 ## 🧩 Tech Stack Breakdown
 
 | Component         | Role                               |
