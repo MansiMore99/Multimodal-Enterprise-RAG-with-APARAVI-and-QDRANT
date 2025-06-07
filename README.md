@@ -9,6 +9,8 @@
 
 </div>
 
+![ChatGPT Image Jun 7, 2025, 01_14_35 PM](https://github.com/user-attachments/assets/225eafad-9be3-48ac-a51a-698a8f060f63)
+
 📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
 ---
@@ -57,7 +59,7 @@ This project develops a DIY Home-Repair Helper, a smart assistant that assists u
 ```
 Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searching ➡️ Answering
 ```
-<img width="1469" alt="Screenshot 2025-06-06 at 3 36 33 AM" src="https://github.com/user-attachments/assets/68e97cd0-3262-46a0-908c-67f12e537be1" />
+<img width="1392" alt="Multimodel RAG" src="https://github.com/user-attachments/assets/68312a36-2187-4405-9867-981e7966f281" />
 
 ---
 
