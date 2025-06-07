@@ -53,6 +53,7 @@ This project develops a DIY Home-Repair Helper, a smart assistant that assists u
 ```
 Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searching ➡️ Answering
 ```
+<img width="1469" alt="Screenshot 2025-06-06 at 3 36 33 AM" src="https://github.com/user-attachments/assets/68e97cd0-3262-46a0-908c-67f12e537be1" />
 
 ---
 
@@ -70,13 +71,9 @@ Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searc
 ```json
 {
   "system_prompt": "How to patch drywalls?",
-  "user_prompt": "Answer"
+  "user_prompt": "Patch drywall by securing a matching piece, taping seams, applying joint compound in layers, sanding smooth, and painting over."
 }
 ```
-
----
-
-
 
 ---
 
