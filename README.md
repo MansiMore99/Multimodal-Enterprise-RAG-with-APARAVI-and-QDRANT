@@ -5,15 +5,13 @@
 > Build your own AI-powered handyman! 🤖🔧
 
 [![Access DTC Platform](https://img.shields.io/badge/Launch-Data%20Toolchain-blue?style=for-the-badge&logo=aparatool)](https://dtc-dev.aparavi.com/)
-![AI Powered](https://img.shields.io/badge/AI%20Powered-YES-brightgreen?style=for-the-badge)
 ![Multimodal](https://img.shields.io/badge/Multimodal-Supported-orange?style=for-the-badge)
-![Deployment](https://img.shields.io/badge/Deployment-Cloud%20%2B%20OnPrem-yellow?style=for-the-badge)
 
 </div>
 
----
+📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
-Access the DTC Platform 👉 dtc-dev.aparavi.com
+---
 
 #### 📌 Overview
 
@@ -27,7 +25,56 @@ This project develops a DIY Home-Repair Helper, a smart assistant that assists u
 - Secure & Compliant – Keeps your data safe
 - Download Aparavi ToolChain for AI
 
+---
 
+## 🧩 Tech Stack Breakdown
+
+| Component         | Role                               |
+|------------------|------------------------------------|
+| ☁️ AWS S3         | Cloud file storage                  |
+| 🧹 Preprocessor   | Cleans & structures the content     |
+| 🧠 Embeddings     | Converts content into vectors       |
+| 📦 Qdrant DB      | Smart, fast vector search           |
+| 🧠 LLMs           | Answers questions using the context |
+| 💬 Chat UI        | Where users ask questions           |
+
+---
+
+## 🏗️ Setup in 3 Steps
+
+1. 🪣 [Create an S3 Bucket](https://www.youtube.com/watch?v=9GFC6ZGMj_k&t=47s)
+2. 🔑 [Get AWS Access & Secret Keys](https://www.youtube.com/watch?v=lntWTStctIE)
+3. ✨ Connect it all in Aparavi and start chatting!
+
+---
+
+## 🔁 Data Processing Pipeline
+
+```
+Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searching ➡️ Answering
+```
+
+---
+
+## 🎯 Project Goals
+
+- 📦 Support text, images, audio, and video
+- 🧠 Build a Neo4j-like knowledge graph
+- 🔍 Combine vector + graph search
+- 💬 Enable multimodal chatbot experience
+
+---
+
+## 💡 Example Prompt
+
+```json
+{
+  "system_prompt": "How to patch drywalls?",
+  "user_prompt": "Answer"
+}
+```
+
+---
 
 
 
