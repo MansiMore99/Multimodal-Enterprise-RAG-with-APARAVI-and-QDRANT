@@ -9,7 +9,7 @@
 
 </div>
 
-![ChatGPT Image Jun 7, 2025, 01_14_35 PM](https://github.com/user-attachments/assets/225eafad-9be3-48ac-a51a-698a8f060f63)
+[Img.png](https://github.com/MansiMore99/Multimodal-Enterprise-RAG-with-APARAVI-and-QDRANT/blob/main/Img.png)
 
 📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
