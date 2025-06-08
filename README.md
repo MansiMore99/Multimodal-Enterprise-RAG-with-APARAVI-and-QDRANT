@@ -28,6 +28,8 @@ Using Aparavi's powerful Data Toolchain, we’ve built a smart assistant that:
 - Analyzes pictures of broken items
 - Answers your questions instantly
 
+“It’s like having a brain map for every possible repair — and it works beautifully with the AI assistant behind the scenes.”
+
 ---
 
 ## 🎯 Project Goals
