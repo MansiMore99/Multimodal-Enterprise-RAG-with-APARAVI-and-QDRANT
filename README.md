@@ -6,10 +6,6 @@
 
 > In this step-by-step project, you’ll learn how to build a complete multimodal Retrieval-Augmented Generation (RAG) pipeline using a no-code visual Data Toolchain. 
 
-Perfect for AI builders, developers, and data teams working with unstructured data to power LLM applications like intelligent search or chatbots — no heavy coding needed.
-
-Start building smarter AI workflows today.
-
 [![Access DTC Platform](https://img.shields.io/badge/Launch-Data%20Toolchain-blue?style=for-the-badge&logo=aparatool)](https://dtc-dev.aparavi.com/)
 ![Multimodal](https://img.shields.io/badge/Multimodal-Supported-orange?style=for-the-badge)
 
