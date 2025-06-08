@@ -66,7 +66,7 @@ Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searc
 ```
 ---
 
-<img width="1392" alt="Multimodel RAG" src="https://github.com/user-attachments/assets/68312a36-2187-4405-9867-981e7966f281" />
+<img width="1395" alt="Screenshot 2025-06-08 at 6 11 16 AM" src="https://github.com/user-attachments/assets/6e1a4759-0e8e-42b7-8160-cfbb0d2b5c6d" />
 
 ---
 
