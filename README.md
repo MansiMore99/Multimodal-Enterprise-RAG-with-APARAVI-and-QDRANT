@@ -9,7 +9,7 @@
 
 </div>
 
-[Img.png](https://github.com/MansiMore99/Multimodal-Enterprise-RAG-with-APARAVI-and-QDRANT/blob/main/Img.png)
+![Architecture Diagram](./Img.png)
 
 📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
