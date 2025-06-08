@@ -11,7 +11,7 @@
 
 </div>
 
-![Architecture Diagram](.Images/Img.png)
+![Architecture Diagram](https://github.com/MansiMore99/Multimodal-Enterprise-RAG-with-APARAVI-and-QDRANT/blob/main/Images/Img.png)
 
 📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
