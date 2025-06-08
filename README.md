@@ -91,7 +91,7 @@ Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searc
 
 ## Step-by-Step Guide:
 
-[![Watch on YouTube](https://img.shields.io/badge/YouTube-Play-red?logo=youtube)]()
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Play-red?logo=youtube)](https://youtu.be/DWX4akZNAyQ)
 
 
 #### 📬 Let’s Connect
