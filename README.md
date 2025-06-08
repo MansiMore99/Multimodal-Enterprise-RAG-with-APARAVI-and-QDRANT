@@ -43,6 +43,7 @@ Using Aparavi's powerful Data Toolchain, we’ve built a smart assistant that:
 
 <img width="214" alt="Screenshot 2025-06-07 at 2 37 27 AM" src="https://github.com/user-attachments/assets/34420111-9f8d-4f0b-bd15-8660bfe6c15f" />
 <img width="180" alt="Screenshot 2025-06-07 at 11 02 14 PM" src="https://github.com/user-attachments/assets/a648b49b-8fd2-4510-8b50-544f96606c79" />
+<img width="161" alt="Screenshot 2025-06-08 at 5 53 20 AM" src="https://github.com/user-attachments/assets/c59cc2d1-7900-4147-aac3-961a8880e7b4" />
 <img width="137" alt="Screenshot 2025-06-07 at 2 37 45 AM" src="https://github.com/user-attachments/assets/fd40b218-2aa2-4a94-9911-ea3c6aefd7d1" />
 <img width="213" alt="Screenshot 2025-06-07 at 11 02 25 PM" src="https://github.com/user-attachments/assets/e1d81869-cd42-44c8-8551-1d56de6d6ebe" />
 
@@ -87,6 +88,11 @@ Data ➡️ Parsing ➡️ Cleaning ➡️ Embedding ➡️ Storing ➡️ Searc
 ```
 
 ---
+
+## Step-by-Step Guide:
+
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Play-red?logo=youtube)]()
+
 
 #### 📬 Let’s Connect
 Have feedback, questions, or want to contribute? Feel free to reach out or fork the project!
