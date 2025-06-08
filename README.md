@@ -4,7 +4,7 @@
 
 > Build your own AI-powered handyman! 🤖🔧
 
-> In this step-by-step project, you’ll learn how to build a complete multimodal Retrieval-Augmented Generation (RAG) pipeline using a no-code visual Data Toolchain. 
+> In this step-by-step guide, you’ll learn how to build a complete multimodal Retrieval-Augmented Generation (RAG) pipeline using a no-code visual Data Toolchain. 
 
 [![Access DTC Platform](https://img.shields.io/badge/Launch-Data%20Toolchain-blue?style=for-the-badge&logo=aparatool)](https://dtc-dev.aparavi.com/)
 ![Multimodal](https://img.shields.io/badge/Multimodal-Supported-orange?style=for-the-badge)
