@@ -1,0 +1,361 @@
+{
+  "components": [
+    {
+      "id": "aws_2",
+      "provider": "aws",
+      "config": {
+        "actions": {},
+        "exclude": [],
+        "include": [
+          {
+            "path": "my-rag-aws-bucket/rag_Data/"
+          }
+        ],
+        "mode": "Source",
+        "parameters": {
+          "region": "us-west-2",
+          "accessKey": "<your accessKey>",
+          "secretKey": "<Your secretKey>"
+        },
+        "type": "aws"
+      },
+      "ui": {
+        "position": {
+          "x": -864.6410929538408,
+          "y": 542.8022745190115
+        },
+        "measured": {
+          "width": 140,
+          "height": 54
+        },
+        "data": {
+          "class": "source",
+          "type": "default"
+        },
+        "formDataValid": true
+      }
+    },
+    {
+      "id": "parse_2",
+      "provider": "parse",
+      "config": {},
+      "ui": {
+        "position": {
+          "x": -627.0109289572229,
+          "y": 554.1438863123024
+        },
+        "measured": {
+          "width": 140,
+          "height": 116
+        },
+        "data": {
+          "class": "data",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__aws_2source-tags-0-parse_2target-tags-0",
+            "source": "aws_2",
+            "target": "parse_2",
+            "sourceHandle": "source-tags-0",
+            "targetHandle": "target-tags-0"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "tags",
+          "from": "aws_2"
+        }
+      ]
+    },
+    {
+      "id": "preprocessor_langchain_2",
+      "provider": "preprocessor_langchain",
+      "config": {
+        "profile": "default",
+        "default": {
+          "mode": "strlen",
+          "splitter": "RecursiveCharacterTextSplitter",
+          "strlen": 512
+        }
+      },
+      "ui": {
+        "position": {
+          "x": -391.98326614565434,
+          "y": 620.749532180843
+        },
+        "measured": {
+          "width": 140,
+          "height": 99
+        },
+        "data": {
+          "class": "preprocessor",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__parse_2source-text-0-preprocessor_langchain_2target-text-1",
+            "source": "parse_2",
+            "target": "preprocessor_langchain_2",
+            "sourceHandle": "source-text-0",
+            "targetHandle": "target-text-1"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "text",
+          "from": "parse_2"
+        }
+      ]
+    },
+    {
+      "id": "qdrant_2",
+      "provider": "qdrant",
+      "config": {
+        "profile": "cloud",
+        "cloud": {
+          "collection": "APARAVI",
+          "host": "<qdrant host>.<region>.cloud.qdrant.io",
+          "port": 6333,
+          "score": 0.7,
+          "apikey": "<qdrant api key>"
+        },
+        "local": {
+          "collection": "APARAVI",
+          "host": "localhost",
+          "port": 6333,
+          "score": 0.7
+        }
+      },
+      "ui": {
+        "position": {
+          "x": 141.4744912130566,
+          "y": 529.8585163853046
+        },
+        "measured": {
+          "width": 140,
+          "height": 146
+        },
+        "data": {
+          "class": "store",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__embedding_transformer_1source-documents-0-qdrant_2target-documents-0",
+            "source": "embedding_transformer_1",
+            "target": "qdrant_2",
+            "sourceHandle": "source-documents-0",
+            "targetHandle": "target-documents-0"
+          },
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__embedding_transformer_1source-questions-1-qdrant_2target-questions-1",
+            "source": "embedding_transformer_1",
+            "target": "qdrant_2",
+            "sourceHandle": "source-questions-1",
+            "targetHandle": "target-questions-1"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "embedding_transformer_1"
+        },
+        {
+          "lane": "questions",
+          "from": "embedding_transformer_1"
+        }
+      ]
+    },
+    {
+      "id": "response_1",
+      "provider": "response",
+      "config": {
+        "lanes": [
+          {
+            "laneId": "answers",
+            "laneName": "Answers"
+          }
+        ]
+      },
+      "ui": {
+        "position": {
+          "x": 578.4384953609044,
+          "y": 559.308378669998
+        },
+        "measured": {
+          "width": 140,
+          "height": 257
+        },
+        "data": {
+          "class": "infrastructure",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__llm_gemini_1source-answers-0-response_1target-answers-0",
+            "source": "llm_gemini_1",
+            "target": "response_1",
+            "sourceHandle": "source-answers-0",
+            "targetHandle": "target-answers-0"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "answers",
+          "from": "llm_gemini_1"
+        }
+      ]
+    },
+    {
+      "id": "llm_gemini_1",
+      "provider": "llm_gemini",
+      "config": {
+        "profile": "gemini-1_5-pro",
+        "gemini-1_5-pro": {
+          "apikey": "<gemini api key>"
+        }
+      },
+      "ui": {
+        "position": {
+          "x": 363.08719927862694,
+          "y": 653.8992350031409
+        },
+        "measured": {
+          "width": 140,
+          "height": 70
+        },
+        "data": {
+          "class": "llm",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__qdrant_2source-questions-1-llm_gemini_1target-questions-0",
+            "source": "qdrant_2",
+            "target": "llm_gemini_1",
+            "sourceHandle": "source-questions-1",
+            "targetHandle": "target-questions-0"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "qdrant_2"
+        }
+      ]
+    },
+    {
+      "id": "thumbnail_1",
+      "provider": "thumbnail",
+      "config": {},
+      "ui": {
+        "position": {
+          "x": -396.1397313352106,
+          "y": 496.5615680944853
+        },
+        "measured": {
+          "width": 140,
+          "height": 70
+        },
+        "data": {
+          "class": "image",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__parse_2source-image-0-thumbnail_1target-image-0",
+            "source": "parse_2",
+            "target": "thumbnail_1",
+            "sourceHandle": "source-image-0",
+            "targetHandle": "target-image-0"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "image",
+          "from": "parse_2"
+        }
+      ]
+    },
+    {
+      "id": "embedding_transformer_1",
+      "provider": "embedding_transformer",
+      "config": {
+        "profile": "miniLM"
+      },
+      "ui": {
+        "position": {
+          "x": -119.98366408007092,
+          "y": 746.5445220266229
+        },
+        "measured": {
+          "width": 140,
+          "height": 83
+        },
+        "data": {
+          "class": "embedding",
+          "type": "default"
+        },
+        "formDataValid": true,
+        "edges": [
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__preprocessor_langchain_2source-documents-1-embedding_transformer_1target-documents-0",
+            "source": "preprocessor_langchain_2",
+            "target": "embedding_transformer_1",
+            "sourceHandle": "source-documents-1",
+            "targetHandle": "target-documents-0"
+          },
+          {
+            "selectable": true,
+            "deletable": true,
+            "id": "xy-edge__thumbnail_1source-documents-0-embedding_transformer_1target-documents-0",
+            "source": "thumbnail_1",
+            "target": "embedding_transformer_1",
+            "sourceHandle": "source-documents-0",
+            "targetHandle": "target-documents-0"
+          }
+        ]
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "preprocessor_langchain_2"
+        },
+        {
+          "lane": "documents",
+          "from": "thumbnail_1"
+        }
+      ]
+    }
+  ],
+  "id": "aeccf403-2265-44df-9fbb-4b95b7bd5127"
+}
