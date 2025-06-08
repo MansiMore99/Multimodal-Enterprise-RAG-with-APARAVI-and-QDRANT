@@ -1,0 +1,9 @@
+{
+    "openai_api_key": "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",
+    "openai_model": "gpt-4",
+    "system_prompt": "You are a helpful assistant for enterprise knowledge retrieval.",
+    "user_prompt": "Using the following context:\n{context}\nAnswer the question: {message}\nConversation: {history}",
+    "temperature": 0.3,
+    "max_tokens": 512,
+    "embedding_model": "text-embedding-3-small"
+  }
