@@ -11,7 +11,7 @@
 
 </div>
 
-![Architecture Diagram](./Img.png)
+![Architecture Diagram](.Images/Img.png)
 
 📥 [Download Aparavi Data Toolchain for AI](https://aparavi.com/download-data-toolchain-for-ai/)
 
